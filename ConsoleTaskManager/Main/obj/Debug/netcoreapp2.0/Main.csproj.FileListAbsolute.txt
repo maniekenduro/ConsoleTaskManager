@@ -1,0 +1,11 @@
+C:\Users\Admin\Desktop\programs\Warsztat1\ConsoleTaskManager\ConsoleTaskManager\Main\bin\Debug\netcoreapp2.0\Main.deps.json
+C:\Users\Admin\Desktop\programs\Warsztat1\ConsoleTaskManager\ConsoleTaskManager\Main\bin\Debug\netcoreapp2.0\Main.runtimeconfig.json
+C:\Users\Admin\Desktop\programs\Warsztat1\ConsoleTaskManager\ConsoleTaskManager\Main\bin\Debug\netcoreapp2.0\Main.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\programs\Warsztat1\ConsoleTaskManager\ConsoleTaskManager\Main\bin\Debug\netcoreapp2.0\Main.dll
+C:\Users\Admin\Desktop\programs\Warsztat1\ConsoleTaskManager\ConsoleTaskManager\Main\bin\Debug\netcoreapp2.0\Main.pdb
+C:\Users\Admin\Desktop\programs\Warsztat1\ConsoleTaskManager\ConsoleTaskManager\Main\obj\Debug\netcoreapp2.0\Main.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\programs\Warsztat1\ConsoleTaskManager\ConsoleTaskManager\Main\obj\Debug\netcoreapp2.0\Main.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\programs\Warsztat1\ConsoleTaskManager\ConsoleTaskManager\Main\obj\Debug\netcoreapp2.0\Main.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\programs\Warsztat1\ConsoleTaskManager\ConsoleTaskManager\Main\obj\Debug\netcoreapp2.0\Main.AssemblyInfo.cs
+C:\Users\Admin\Desktop\programs\Warsztat1\ConsoleTaskManager\ConsoleTaskManager\Main\obj\Debug\netcoreapp2.0\Main.dll
+C:\Users\Admin\Desktop\programs\Warsztat1\ConsoleTaskManager\ConsoleTaskManager\Main\obj\Debug\netcoreapp2.0\Main.pdb
