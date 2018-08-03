@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\programs\\Warsztat1\\ConsoleTaskManager\\ConsoleTaskManager\\Main\\Main.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\programs\\ConsoleTaskManager\\ConsoleTaskManager\\Main\\Main.csproj",
       "projectName": "Main",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\programs\\Warsztat1\\ConsoleTaskManager\\ConsoleTaskManager\\Main\\Main.csproj",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\programs\\ConsoleTaskManager\\ConsoleTaskManager\\Main\\Main.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\programs\\Warsztat1\\ConsoleTaskManager\\ConsoleTaskManager\\Main\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\programs\\ConsoleTaskManager\\ConsoleTaskManager\\Main\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

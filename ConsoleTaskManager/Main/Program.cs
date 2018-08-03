@@ -7,23 +7,21 @@ namespace Main
 {
 	class Program
 	{
-		public static List<TaskModel> list = new List<TaskModel>();
+		public static List<TaskModel> List = new List<TaskModel>();
 
 		static void Main(string[] args)
 		{
 			ConsoleEx.WriteLine("CONSOLE TASK MANAGER".PadLeft(20), ConsoleColor.Yellow);
 			string command = "";
 			do
-			{
-				
-				
+			{ 
 				Console.WriteLine("Podaj komende: ");
 				Console.WriteLine("Dostępne opcje to: add, remove, clear, show, save, load, ");
 				command = Console.ReadLine();
 				switch (command)
 				{
 					case "add":
-						list.Add(AddTask());
+						List.Add(AddTask());
 						Console.Clear();
 						break;
 
@@ -54,18 +52,14 @@ namespace Main
 						Console.WriteLine("nie rozpoznano polecenia");
 						break;
 				}
-				
 			}
 			while (command != "exit");
-			
 		}
-
 
 		public static TaskModel AddTask()
 		{
 			Console.Write("Podaj opis zadania: ");										    //opis
 			string description = Console.ReadLine();
-
 
 			Console.Write("Czy jest to zadanie wazne?: [t/n]");							  //czy wazne
 			string importantTaskstr = Console.ReadLine();
@@ -84,13 +78,11 @@ namespace Main
 					break;
 			}
 
-
 			Console.Write("Podaj date rozpoczęcia: dzien/miesiac/rok ");                    //start
 			string startstr = Console.ReadLine().ToString(CultureInfo.InvariantCulture);
 			DateTime start;
 			try
 			{
-				
 				if (startstr == "")
 				{
 					start = DateTime.Now;
@@ -106,9 +98,6 @@ namespace Main
 				Console.ReadKey();
 				return null;
 			}
-			
-
-			
 
 			Console.Write("Czy jest to zadanie na jeden dzień: [t/n] ");        //zadanie jednodniowe
 			DateTime? end = null;
@@ -136,13 +125,8 @@ namespace Main
 					Console.ReadKey();
 				}
 			}
-
-			
-
-
 			return new TaskModel(description, start , end , allDayTask, importantTask); 
 		}
-		
 
 		public static void RemoveTask()
 		{
@@ -152,7 +136,7 @@ namespace Main
 			Console.WriteLine();
 			Console.Write("Podaj ID zadania do usuniecia: ");
 			int id = int.Parse(Console.ReadLine());
-			list.RemoveAt(id-1);
+			List.RemoveAt(id-1);
 			Console.Clear();
 			ShowTasks();
 			Console.WriteLine();
@@ -175,7 +159,7 @@ namespace Main
 			Console.WriteLine();
 			ConsoleEx.WriteLine("".PadLeft(114, '-'), a);
 			int i = 1;
-			foreach (TaskModel task in list)
+			foreach (TaskModel task in List)
 			{
 				ConsoleColor b = ConsoleColor.Green;
 				ConsoleEx.Write($"{i} |".PadLeft(10), b);
@@ -188,7 +172,6 @@ namespace Main
 				i++;
 			}
 			Console.WriteLine();
-
 		}
 
 		public static void SaveTasks()
@@ -197,7 +180,7 @@ namespace Main
 			string path = Console.ReadLine();
 
 			List<string> listsave = new List<string>();
-			foreach (TaskModel tosave in list)
+			foreach (TaskModel tosave in List)
 			{
 				listsave.Add($"{tosave.Description},{tosave.Start},{tosave.End},{tosave.ImportantTask},{tosave.AlldayTask}"); 
 			}
@@ -205,13 +188,10 @@ namespace Main
 
 			Console.WriteLine($"Lista zadań została zapisana do pliku {path} w folderze projektu");
 			Console.ReadKey();
-
-
 		}
 
 		public static void LoadTasks()
-		{  
-		
+		{
 			Console.WriteLine("Podaj nazwe pliku z rozszerzeniem .csv");
 			string path = Console.ReadLine();
 			string[] tableload = File.ReadAllLines(path);
@@ -241,22 +221,12 @@ namespace Main
 					day = false;
 				}
 
-				list.Add(new TaskModel(des, st, en, imp, day));
-
-
+				List.Add(new TaskModel(des, st, en, imp, day));
 			}
 			Console.Clear();
 			ShowTasks();
-
-
-
-					Console.WriteLine($"Lista zadań została załadowana z pliku {path} z foldera projektu");
+			Console.WriteLine($"Lista zadań została załadowana z pliku {path} z foldera projektu");
 			Console.ReadKey();
-			
-
-
-
-
 		}
 	}
 }
